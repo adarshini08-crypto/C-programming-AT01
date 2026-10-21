@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int gold, x, y;
+    int longBen, blackbeard, remaining, pirates;
+
+    scanf("%d", &gold);
+    scanf("%d", &x);
+    scanf("%d", &y);
+
+    longBen = gold * x / 100;
+    remaining = gold - longBen;
+
+    blackbeard = remaining * y / 100;
+    remaining = remaining - blackbeard;
+
+    pirates = remaining / 2;
+
+    printf("%d\n", longBen);
+    printf("%d\n", blackbeard);
+    printf("%d\n", pirates);
+
+    return 0;
+}
